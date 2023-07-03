@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Diesease Classification</title>
+</head>
+<body>
+   
+    <form action="{{url_for('predict')}}" . method="post">
+        <label for="age">Patient's age</label><br>
+        <input type="text" id ="age" name="age"></input><br>
+
+        <label for="gender">Patient's gender. male=1, female=0:</label><br>
+        <input type="text" id="gender" name="gender" ></input><br>
+        
+        
+        <label for="cigperday">"Patient's smoked cigarettes per day:</label><br>
+        <input type="text" id= "cigperday" name="cigperday" ></input>   <br>
+        
+        <label for="sysbp">Patient's systolic blood pressure:</label><br>
+        <input type="text" id= "sysbp" name="sysbp" ></input>  <br> 
+        
+        <label for="diabp">Patient's diastolic blood pressure: </label><br>
+        <input type="text" id="diabp" name="diabp" ></input><br>   
+        
+        <label for="chol">Patient's cholesterin level: </label><br>
+        <input type="text" id="chol" name="chol"></input><br>   
+        
+        
+        <label for="hypertensive">Was Patient hypertensive? Yes=1, No=0 ?</label><br>
+        <input type="text" id= "hypertensive" name="hypertensive" ></input><br>   
+        
+        
+        
+        <label for="diabetes">Did Patient have diabetes? Yes=1, No=0?</label><br>
+        <input type="text" id="diabetes" name="diabetes" ></input><br>   
+        
+        
+        
+        <label for="glucose">What is the Patient's glucose level? >>></label><br>
+        <input type="text" id ="glucose" name="glucose"></input><br>   
+        
+        
+        
+        <label for="bpdabai">Has Patient been on Blood Pressure Medication? Yes=1, No=0:</label><br>
+        <input type="text" id = "bpdabai" name="bpdabai" ></input><br>
+
+        <button type="submit"> Predict </button>
+    </form>
+    <h1><br> {{prediction_text}}</h1>
+</body>
+</html>
