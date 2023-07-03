@@ -13,7 +13,7 @@ Flask==2.2.5
 fonttools==4.38.0
 imbalanced-learn==0.10.1
 imblearn==0.0
-ipykernel==6.23.3
+ipykernel==6.16.2
 ipython==8.14.0
 itsdangerous==2.1.2
 jedi==0.18.2
